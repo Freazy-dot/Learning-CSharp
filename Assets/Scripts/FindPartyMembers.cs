@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class FindPartyMembers : MonoBehaviour
 {
+
+    public string myName = "Bjarke Vinberg Hansen";
+    public int myNumber = 0;
     //Assignment from here
     //Input Parameter 1 is own name,input parameter 2 is where in the last my character would be added
     public void FindQuestMembers(string myName, int myNumber)
@@ -27,11 +30,10 @@ public class FindPartyMembers : MonoBehaviour
         }
 
     }
-    public string myName = "Bjarke Vinberg Hansen";
-    public int myNumber = 0;
+    
 
     // Start is called before the first frame update
-    //Start adds my own name in the desired place on the list
+    //Start adds my own name in the desired place on the list using FindQuestMembers 
     void Start()
     {
         FindQuestMembers(myName, myNumber);
