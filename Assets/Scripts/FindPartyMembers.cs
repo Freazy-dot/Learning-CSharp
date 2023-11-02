@@ -38,7 +38,15 @@ public class FindPartyMembers : MonoBehaviour
     {
         FindQuestMembers(myName, myNumber);
 
+        Character hero = new Character();
+        hero.PrintStatsInfo();       
+        Character heroine = new Character("Cindy");
+        heroine.PrintStatsInfo();
+
     }
+
+
+   
 
     // Update is called once per frame
     void Update()
